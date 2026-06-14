@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="coverlet.collector" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
+        <PackageReference Include="Moq" Version="4.20.72" />
+        <PackageReference Include="NSubstitute" Version="6.0.0-rc.1" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3"/>
+        <PackageReference Include="xunit.v3" Version="3.2.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="Xunit"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="OperationResultUnitTest\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ViaPadel.Core.Application\ViaPadel.Core.Application.csproj" />
+      <ProjectReference Include="..\ViaPadel.Core.Domain\ViaPadel.Core.Domain.csproj" />
+      <ProjectReference Include="..\ViaPadel.Infrastructure.EfcQueries\ViaPadel.Infrastructure.EfcQueries.csproj" />
+    </ItemGroup>
+
+</Project>

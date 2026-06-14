@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Commands\" />
+      <Folder Include="Features\Bookings\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ViaPadel.Core.Domain\ViaPadel.Core.Domain.csproj" />
+      <ProjectReference Include="..\ViaPadel.Core.Tools.OperationResult\ViaPadel.Core.Tools.OperationResult.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Testing.Platform" Version="1.9.1" />
+    </ItemGroup>
+
+</Project>
