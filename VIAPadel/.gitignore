@@ -1,0 +1,122 @@
+﻿# ---------------------------------------------
+# .gitignore for a Rider / C# / .NET project
+# ---------------------------------------------
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+build/
+bld/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+
+# .NET / MSBuild
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.binlog
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+# NuGet
+.nuget/
+*.nuget.props
+*.nuget.targets
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+# Visual Studio (in case anyone on the team uses it)
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Build / test output
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+TestResults/
+.vscode/
+
+# Rider auto-generated
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.resharper
+
+# ASP.NET / app secrets (do NOT commit secrets)
+*.pfx
+*.publishsettings
+appsettings.*.local.json
+secrets.json
+
+# StyleCop
+StyleCopReport.xml
+
+# Files built by Visual Studio / MSBuild
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Others
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+node_modules/
+orleans.codegen.cs
+
+# OS-generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+Desktop.ini
